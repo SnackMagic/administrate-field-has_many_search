@@ -11,6 +11,10 @@ module Administrate
         end
       end
 
+      def only_one
+        options[:only_one]
+      end
+
       def associated_resource_options
         if data.blank?
           []
